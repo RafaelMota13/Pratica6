@@ -7,7 +7,7 @@ Console.ReadKey();
 
 // Lógica de validação do nome
 // ....
-exibirMensagemDeErro("Nome inválido. O nome é obrigatório.");
+exibirMensagemDeErro("Nome inválido. O nome é obrigatório."); // Argumento
 
 Console.Write("Digite seu idade.....: ");
 Console.ReadKey();
@@ -25,9 +25,9 @@ exibirMensagemDeErro("A profissão é obrigatória.");
 void exibirMensagemDeErro(string mensagem) // Assinatura
 {
     
-    string mensagemAjustada = $"| {mensagem} |";
-    int quantidaDeTracos = mensagemAjustada.Length;
-    string barra = "".PadRight(quantidaDeTracos, '-');
+    string mensagemAjustada = $"| {mensagem} |";       //
+    int quantidaDeTracos = mensagemAjustada.Length;    // Parâmetro
+    string barra = "".PadRight(quantidaDeTracos, '-'); //
 
     Console.WriteLine();
     Console.WriteLine(barra);
@@ -40,6 +40,7 @@ void exibirMensagemDeErro(string mensagem) // Assinatura
     Console.WriteLine();
     Console.Beep();
     Console.Beep();
+
 }
 
 
